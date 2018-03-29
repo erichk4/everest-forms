@@ -39,7 +39,6 @@ if ( ! class_exists( 'EVF_Settings_Validation', false ) ) :
 
 			$settings = apply_filters(
 				'everest_forms_validation_settings', array(
-
 					array(
 						'title' => __( 'Validation Messages', 'everest-forms' ),
 						'type'  => 'title',
@@ -95,7 +94,6 @@ if ( ! class_exists( 'EVF_Settings_Validation', false ) ) :
 						'type' => 'sectionend',
 						'id'   => 'validation_options',
 					),
-
 				)
 			);
 
@@ -107,7 +105,6 @@ if ( ! class_exists( 'EVF_Settings_Validation', false ) ) :
 		 */
 		public function save() {
 			$settings = $this->get_settings();
-
 
 			EVF_Admin_Settings::save_fields( $settings );
 		}
